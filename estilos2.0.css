@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+body{
+    background-image: url(imag/fondonegro.png);
+    color: #fff ;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    min-height: 100vh;
+}
+header{
+    background-color: #212121;
+    padding-left: 6px;
+    padding-top: 5px;
+
+}
+.logo {
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+nav p {
+    font-size: 30px;
+    margin-top: 30px;
+    padding-left: 6px;
+}
+.menu {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    background-color: #212121;
+}
+nav div a{
+    display: block;
+}
+#inst{
+    text-align: center;
+}
+ul a {
+    margin-bottom: 7px;
+    display: inline-block ;
+    background-color: #F46F31 ;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+    font-size: 22px;
+    align-items: center;
+}
+div ul{
+    position: sticky;
+}
+.centrar {
+    text-align: center;
+}
+ul a:hover{
+    background: #fff3e0;
+    color: black ;
+}
+.titulo {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    background-color: rgb(243, 219, 141);
+    margin: 0px 0px 0px 0px;
+    padding-top: 0px;
+}
+.titulo h1 {
+    font-size: 44px;
+    color: #333;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.titulo h2 {
+    color: rgb(53, 53, 53);
+    font-size: 25px;
+    padding-top: 0px;
+    margin-top: 0px;
+    text-decoration: none;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    word-spacing: 2px;
+    font-size: 33px;
+}
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 160px;
+}
+/* AJUSTAR PADDING PARA PANTALLAS GRANDES */
+.card{
+    background: rgba(51, 51, 51, 0.3);
+    text-align: center;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    font-size: 26px;
+}
+footer {
+    background-color: #333;
+    margin: 0px 0px -15px 0px;
+
+}
+#nosotros{
+    text-align: center;
+}
+footer h2{
+    text-decoration: none;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+    text-align: center;
+}
+footer p {
+    text-align: center;
+}
+footer h6{
+    font-size: 13px;
+}
+.bloques{
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 179px;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-height: 400px ){
+    div ul {
+        
+        scroll-padding: 60x;
+    }
+    
+}

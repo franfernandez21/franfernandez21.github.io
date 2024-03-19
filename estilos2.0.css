@@ -5,6 +5,8 @@ body{
     box-sizing: border-box;
     overflow-x:hidden;
     min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     background-color: #212121;

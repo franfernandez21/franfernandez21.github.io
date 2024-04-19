@@ -1,77 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
-body{
-    background-image: url(imag/fondonegro.png);
-    color: #fff ;
+*{
     box-sizing: border-box;
-    overflow-x:hidden;
-    min-height: 100vh;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+}
+body{
+    background-image: url(images/fondonegro.png);
+    color: #fff ;
+    min-height: 90vh;
+    min-width: 90vw;
     background-size: cover;
     background-attachment: fixed;
 }
-header{
-    background-color: #212121;
-    padding-left: 6px;
-    padding-top: 5px;
-
-}
-.logo {
-    padding-bottom: 8px;
+/* HEAD  */
+.logo{
+    background: linear-gradient(50deg, rgba(0, 24, 48, 90)10%, rgba(96 101 137 / 48%)), url(images/sinpic.png);
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    min-height: 10vh;
 }
-nav p {
-    font-size: 30px;
-    margin-top: 30px;
-    padding-left: 6px;
+.logo p {
+    text-transform: uppercase;
 }
-.menu {
-    display: block;
+.icons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.icons a{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+/* GUIA DE COMIDAS */
+.menu{
+    margin: 0;
+    text-align: center;
+    padding: 10px 0px;
+    background-color: #212121;
+    
+}
+.static{
     position: sticky;
     top: 0;
-    z-index: 1;
-    margin: 0px 0px 0px 0px;
-    text-align: center;
-    padding: 5px 0px 5px 0px;
-    background-color: #212121;
 }
-nav div a{
-    display: block;
-}
-#inst{
-    text-align: center;
-}
-ul a {
+.static ul a{
     margin-bottom: 7px;
     display: inline-block ;
-    background-color: #F46F31 ;
+    background-color: #b45022 ;
     border-radius: 15px;
     color: #fff;
     font-weight: bold;
     padding: 6px 6px 6px 6px;
     text-decoration: none;
     font-size: 22px;
-    align-items: center;
 }
-div ul{
-    position: sticky;
-}
-.centrar {
-    text-align: center;
-}
-ul a:hover{
+.static ul a:hover{
     background: #fff3e0;
     color: black ;
 }
-.titulo {
+.titulo{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     background-color: rgb(243, 219, 141);
     margin: 0px 0px 0px 0px;
     padding-top: 0px;
+    
 }
-.titulo h1 {
-    font-size: 44px;
+.titulo h1{
+    font-size: 40px;
     color: #333;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -83,65 +83,106 @@ ul a:hover{
     margin-top: 0px;
     text-decoration: none;
 }
-h3 {
-    font-family: 'Open Sans', sans-serif;
-    word-spacing: 2px;
-    font-size: 33px;
-}
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding: 160px;
-}
-/* AJUSTAR PADDING PARA PANTALLAS GRANDES */
-.card{
-    background: rgba(51, 51, 51, 0.3);
-    text-align: center;
-}
-h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    font-size: 26px;
-}
-footer {
-    background-color: #333;
-    margin: 0px 0px -15px 0px;
-
-}
-#nosotros{
-    text-align: center;
-}
-footer h2{
-    text-decoration: none;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 20px;
+.header-card img{
     max-width: 100%;
-    text-align: center;
 }
-footer p {
-    text-align: center;
+article.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 260px;
+    background-color: #bbbbbb3d;
+    border-radius: 8px;
+    margin: 1rem;
+    box-shadow: 0 0 12px #5f5d5d8a; 
 }
-footer h6{
-    font-size: 13px;
+.header-card img{
+    border-radius: 8px 8px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+}
+.categoria-card{
+    margin-top: 1rem;
+}
+.categoria-card span{
+    color: #fff;
+}
+.card {
+    border-bottom: 5px solid #cbc5c5;
+}
+.card section{
+    padding: 0 1rem;
+}
+.footer-card{
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+}
+
+.card-wrap{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+}
+.nosotros{
+    font-size: 10px;
 }
 .bloques{
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 179px;
-    text-align: center;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    min-width: 60%;
+    justify-content: space-between;
 }
+.bloques h2{
+    font-size: 15px;
+}
+.bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;   
+}
+footer h6{
+    margin-top: 20px;
+    font-size: 11px;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}  
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+} 
 
-@media (min-height: 400px ){
-    div ul {
-        
-        scroll-padding: 60x;
+@media (max-width: 1530px) {
+    .card-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
-    
+}
+@media (max-width: 600px) {
+    .card-wrap{
+        display: flex;
+        flex-flow: wrap;
+        margin: auto;
+        justify-content: center;
+    }
 }

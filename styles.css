@@ -24,6 +24,9 @@ body{
 }
 .logo p {
     text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vh;
+    text-shadow: 0 0 12px #00e1ffe0;
 }
 .icons{
     display: flex;
@@ -94,7 +97,7 @@ article.card{
     background-color: #bbbbbb3d;
     border-radius: 8px;
     margin: 1rem;
-    box-shadow: 0 0 12px #5f5d5d8a; 
+    box-shadow: 0 0 12px #11fb7478; 
 }
 .header-card img{
     border-radius: 8px 8px 0 0;
